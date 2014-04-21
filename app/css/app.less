@@ -1,54 +1,110 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+  font-family: 'Super Mario 256';
+  src: url('http://www.fontsaddict.com/fontface/super-mario-256.ttf');
+}
 
 body{
-  background-image: url('../media/bg.svg');
+  background-image: url('../media/background.png');
   background-size: cover;
   background-attachment: fixed;
+  margin-left: 30px;
+  background-repeat: no-repeat;
 }
 
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
   /* Set your content font stack here: */
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Super Mario 256';
+  border: none;
 }
 
-.button-success,
-.button-error,
-.button-warning,
-.button-secondary {
-  color: white;
-  border-radius: 4px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+.pure-table {
+    border: none;
 }
 
-.button-success {
-  background: rgb(82, 227, 101);
+.pure-table td {
+    border: none;
 }
 
-.button-error {
-  background: rgb(210, 115, 78);
+ td {
+     width: 150px;
+     height: 150px;
+     padding: 0px;
+     border: none;
+ }
+
+ .pure-button {
+     margin-bottom: 20px;
+     float: left;
+     //margin-right: 25px;
+ }
+
+ #countdown {
+     width: 100px;
+     height: 50px;
+     //background-color: tomato;
+     display: inline-block;
+     text-align: center;
+     font-size: 30px;
+     margin-top: 15px;
+ }
+
+ .start {
+     text-align: center;
+     font-size: 25px;
+     border-radius: 25px;
+     background-color: green;
+     color: white;
+     padding: 20px;
+     box-shadow: 1px 1px 1px black;
+ }
+
+ .start:hover {
+     background-color: white;
+     color: green;
+ }
+
+#game td.card {
+    -webkit-perspective: 1000;
+
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+    height: 150px;
+
+    .flipper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        -webkit-transform-style: preserve-3d;
+        -webkit-transition-duration: 1s;
+
+        .back {
+            background-image: url('/media/21.png');
+            z-index: 5;
+        }
+
+        .front {
+            //display: none;
+            background-position: center;
+            -webkit-transform: rotateY(180deg);
+        }
+
+        .front, .back {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            position: absolute;
+            -webkit-backface-visibility: hidden;
+        }
+    }
 }
 
-.button-warning {
-  background: rgb(223, 117, 20);
+.rotate {
+    -webkit-transform: rotateY(180deg);
 }
 
-.button-secondary {
-  background: rgba(108, 67, 223, 0.55);
-}
-
-.button-xsmall {
-  font-size: 50%;
-}
-
-.button-small {
-  font-size: 85%;
-}
-
-.button-large {
-  font-size: 110%;
-}
-
-.button-xlarge {
-  font-size: 150%;
+h1 {
+    font-size: 50px;
+    font-family: 'Super Mario 256' sans-serif;
 }
