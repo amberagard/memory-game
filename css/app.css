@@ -71,7 +71,7 @@ td {
   -webkit-transition-duration: 1s;
 }
 #game td.card .flipper .back {
-  background-image: url('/media/21.png');
+  background-image: url('../media/21.png');
   z-index: 5;
 }
 #game td.card .flipper .front {
