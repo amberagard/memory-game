@@ -1,0 +1,95 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+  font-family: 'Super Mario 256';
+  src: url('http://www.fontsaddict.com/fontface/super-mario-256.ttf');
+}
+body {
+  background-image: url('../media/background.png');
+  background-size: cover;
+  background-attachment: fixed;
+  margin-left: 30px;
+  background-repeat: no-repeat;
+}
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class*="pure-u"] {
+  /* Set your content font stack here: */
+  font-family: 'Super Mario 256';
+  border: none;
+}
+.pure-table {
+  border: none;
+}
+.pure-table td {
+  border: none;
+}
+td {
+  width: 150px;
+  height: 150px;
+  padding: 0px;
+  border: none;
+}
+.pure-button {
+  margin-bottom: 20px;
+  float: left;
+}
+#countdown {
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 15px;
+}
+.start {
+  text-align: center;
+  font-size: 25px;
+  border-radius: 25px;
+  background-color: green;
+  color: white;
+  padding: 20px;
+  box-shadow: 1px 1px 1px black;
+}
+.start:hover {
+  background-color: white;
+  color: green;
+}
+#game td.card {
+  -webkit-perspective: 1000;
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+#game td.card .flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition-duration: 1s;
+}
+#game td.card .flipper .back {
+  background-image: url('/media/21.png');
+  z-index: 5;
+}
+#game td.card .flipper .front {
+  background-position: center;
+  -webkit-transform: rotateY(180deg);
+}
+#game td.card .flipper .front,
+#game td.card .flipper .back {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+}
+.rotate {
+  -webkit-transform: rotateY(180deg);
+}
+h1 {
+  font-size: 50px;
+  font-family: 'Super Mario 256' sans-serif;
+}

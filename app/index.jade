@@ -1,0 +1,109 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Memory Game
+    link(rel='stylesheet', href='http://yui.yahooapis.com/pure/0.5.0-rc-1/pure-min.css')
+    link(rel='stylesheet', href='http://yui.yahooapis.com/pure/0.5.0-rc-1/grids-responsive-min.css')
+    link(rel='stylesheet', href='./css/app.css')
+  body
+    h1 Super Mario Memory Game
+
+    .pure-g
+      .pure-u-1
+          button.pure-button.start Start
+          //button.pure-button.start Reset
+          #countdown(data-time='60') 60
+      .pure-u-1
+
+    .pure-g
+        table.pure-table
+          tbody#game
+            tr
+              td.card
+                  .flipper
+                      .front
+                      .back
+              td.card
+                  .flipper
+                      .front
+                      .back
+              td.card
+                  .flipper
+                      .front
+                      .back
+              td.card
+                  .flipper
+                      .front
+                      .back
+              td.card
+                  .flipper
+                      .front
+                      .back
+            tr
+              td.card
+                      .flipper
+                          .front
+                          .back
+                  td.card
+                      .flipper
+                          .front
+                          .back
+                  td.card
+                      .flipper
+                          .front
+                          .back
+                  td.card
+                      .flipper
+                          .front
+                          .back
+                  td.card
+                      .flipper
+                          .front
+                          .back
+            tr
+              td.card
+                      .flipper
+                          .front
+                          .back
+                  td.card
+                      .flipper
+                          .front
+                          .back
+                  td.card
+                      .flipper
+                          .front
+                          .back
+                  td.card
+                      .flipper
+                          .front
+                          .back
+                  td.card
+                      .flipper
+                          .front
+                          .back
+            tr
+              td.card
+                      .flipper
+                          .front
+                          .back
+                  td.card
+                      .flipper
+                          .front
+                          .back
+                  td.card
+                      .flipper
+                          .front
+                          .back
+                  td.card
+                      .flipper
+                          .front
+                          .back
+                  td.card
+                      .flipper
+                          .front
+                          .back
+
+    script(src='./js/vendor/jquery-2.1.0.js')
+    script(src='./js/source/main.js')
